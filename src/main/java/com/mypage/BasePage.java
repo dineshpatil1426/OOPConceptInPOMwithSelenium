@@ -28,8 +28,8 @@ public class BasePage extends Page {
 	public WebElement getElement(By locator) {
 		
 		WebElement element=null;
-		
 		try {
+			waitForElementPresent(locator);
 			element=driver.findElement(locator);
 			return element;
 		} catch (Exception e) {

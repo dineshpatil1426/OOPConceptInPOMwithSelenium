@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite guice-stage="DEVELOPMENT" name="Test Automation Suite]" parallel="tests" verbose="3">
+	
+	<test name="Hub Spot Regression Test Cases on chrome" parallel="methods" thread-count="1">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.mytest.LoginTest"></class> 
+ 
+		</classes>
+	</test>
+	
+  <!--
+  <test name="Automation Test firefox" parallel="methods" thread-count="1">
+    <parameter name="browser" value="ff"/>
+    <classes>
+      <class name="com.mytest.LoginTest"/>  
+    </classes>
+  </test>      -->
+  
+  
+</suite> <!-- Failed suite [Hub Spot Test Automation Suite] --> 
